@@ -15,7 +15,7 @@ Modeling compares AdaBoost, RandomForest and GradientBoosting classifiers.
 
 In the end, we arrive at a few good models to use.
 
-# Requirements:
+# Requirements (for ann.py):
 1) Tensorflow
 2) Keras
 
