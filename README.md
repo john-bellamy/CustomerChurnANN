@@ -1,5 +1,6 @@
 # CustomerChurnANN
 An example of customer churn classification using boosting algorithms and an ANN.
+(Still working on this)
 
 # Abstract
 
@@ -26,5 +27,6 @@ In the end, we arrive at a few good models to use.
 
 # Jupyter Notebooks:
 
-1) Navigate to fodler containing jupyter files and launch jupyter.
+1) Navigate to folder containing jupyter files and launch jupyter.
 2) Select file from Jupyter root folder.
+
