@@ -70,15 +70,15 @@ parameters = {'batch_size': [128,256,512,1048], 'epochs' : [10,20,40,50,100,300]
               'optimizer': ['adam','rmsprop']}
 
 # Grid search will use k-fold
-grid_search = GridSearchCV(estimator = classifier, param_grid = parameters,
+grid = GridSearchCV(estimator = classifier, param_grid = parameters,
                            scoring = 'accuracy', cv = 10)
 
 # Now we need to fit grid_search to data
-grid_search = grid_search.fit(X_train, y_train)
+grid_result = grid.fit(X_train, y_train)
 
 #Get the best parameters
-best_parameters = grid_search.best_params_ 
-best_accuracy = grid_search.best_score_
+best_parameters = grid_result.best_params_ 
+best_accuracy = grid_result.best_score_
 
 
 print("Best accuracy is: %.2f" % best_accuracy)
